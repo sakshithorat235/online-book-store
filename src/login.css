@@ -1,0 +1,152 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #f5f0e4, #e6eee2);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px #214d3818;
+}
+
+.login-logo {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #214d38;
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.login-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #e6eee2;
+  font-size: 30px;
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #233f30;
+  font-family: 'Playfair Display', serif;
+  font-size: 31px;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #777a72;
+  font-size: 13px;
+  margin: 12px 0 27px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card form > label {
+  color: #354b3d;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 13px 0 7px;
+}
+
+.login-card form > input {
+  padding: 13px;
+  border: 1px solid #dddcd3;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-card form > input:focus {
+  border-color: #214d38;
+  box-shadow: 0 0 0 3px #214d3810;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 17px;
+}
+
+.login-options .remember-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+.remember-label input {
+  accent-color: #214d38;
+}
+
+.forgot-password {
+  color: #214d38;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-submit {
+  margin-top: 25px;
+  padding: 14px;
+  background: #214d38;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.login-submit:hover {
+  background: #163a29;
+}
+
+.signup-text {
+  text-align: center;
+  color: #777a72;
+  font-size: 13px;
+  margin-top: 24px;
+}
+
+.signup-text a,
+.login-back {
+  color: #214d38;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-back {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 27px 21px;
+  }
+
+  .login-card h1 {
+    font-size: 27px;
+  }
+}

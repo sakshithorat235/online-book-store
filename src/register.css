@@ -1,0 +1,119 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #f5f0e4, #e6eee2);
+}
+
+.register-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 38px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(33, 77, 56, 0.12);
+}
+
+.register-logo {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #214d38;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.register-card h1 {
+  text-align: center;
+  color: #233f30;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.register-subtitle {
+  text-align: center;
+  color: #777a72;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-card form label {
+  color: #354b3d;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 12px 0 7px;
+}
+
+.register-card form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #dddcd3;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  background: #fff;
+}
+
+.register-card form input:focus {
+  border-color: #214d38;
+  box-shadow: 0 0 0 3px rgba(33, 77, 56, 0.08);
+}
+
+.register-submit {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  background: #214d38;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.register-submit:hover {
+  background: #163a29;
+}
+
+.register-login-text {
+  text-align: center;
+  color: #777a72;
+  font-size: 13px;
+  margin-top: 23px;
+}
+
+.register-login-text a,
+.back-home {
+  color: #214d38;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 27px 21px;
+  }
+
+  .register-card h1 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fffdf8;
+  color: #242b24;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.website {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #fffdf8;
+  border-bottom: 1px solid #eee9df;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #214d38;
+}
+
+.logo-icon {
+  font-size: 29px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 34px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555b53;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #c17b45;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn,
+.register-btn {
+  padding: 11px 20px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid #214d38;
+  color: #214d38;
+}
+
+.register-btn {
+  background: #214d38;
+  color: white;
+  border: 1px solid #214d38;
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: 590px;
+  padding: 75px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(120deg, #fffdf8, #f5f0e4);
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 590px;
+}
+
+.tagline {
+  color: #b87540;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 4.5vw, 62px);
+  line-height: 1.15;
+  color: #233f30;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #c17b45;
+}
+
+.hero-description {
+  max-width: 480px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #6c7068;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.explore-btn,
+.learn-btn {
+  padding: 15px 23px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.explore-btn {
+  background: #214d38;
+  color: white;
+  border: none;
+}
+
+.explore-btn:hover {
+  background: #163a29;
+}
+
+.learn-btn {
+  border: 1px solid #d9d2c3;
+  color: #214d38;
+  background: transparent;
+}
+
+.statistics {
+  display: flex;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.statistics h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: #214d38;
+}
+
+.statistics p {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #777a72;
+}
+
+/* Hero Illustration */
+
+.hero-image {
+  flex: 1;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.book-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #e7d9bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 60px #b8a88c35;
+}
+
+.book-circle span {
+  font-size: 145px;
+}
+
+.floating-card {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 17px;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px #00000012;
+}
+
+.floating-card > span {
+  font-size: 28px;
+}
+
+.floating-card strong {
+  font-size: 13px;
+}
+
+.floating-card p {
+  font-size: 11px;
+  margin-top: 5px;
+  color: #777;
+}
+
+/* Catalogue */
+
+.catalogue {
+  padding: 85px 9%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading .tagline {
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #233f30;
+  margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+  font-size: 14px;
+  color: #777a72;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.book-card {
+  padding: 18px;
+  background: white;
+  border: 1px solid #eee9df;
+  border-radius: 13px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px #0000000c;
+}
+
+.book-cover {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.cover-one {
+  background: #e6eee2;
+}
+
+.cover-two {
+  background: #f4e1d5;
+}
+
+.cover-three {
+  background: #e5e8f4;
+}
+
+.book-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  color: #263f30;
+}
+
+.book-card > p {
+  font-size: 13px;
+  color: #81847c;
+  margin-top: 8px;
+}
+
+.book-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.book-bottom strong {
+  color: #b87540;
+  font-size: 18px;
+}
+
+.book-bottom button {
+  border: none;
+  background: #214d38;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 13px;
+  font-size: 12px;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  background: #214d38;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 12px;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #e1e8df;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 60px 6%;
+    gap: 25px;
+  }
+
+  .book-circle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .book-circle span {
+    font-size: 110px;
+  }
+
+  .statistics {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-buttons {
+    gap: 7px;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 9px 12px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 55px 7%;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin: auto;
+  }
+
+  .hero-buttons,
+  .statistics {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    width: 100%;
+    min-height: 280px;
+  }
+
+  .book-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .book-circle span {
+    font-size: 100px;
+  }
+
+  .floating-card {
+    right: 0;
+    bottom: 0;
+  }
+
+  .catalogue {
+    padding: 60px 7%;
+  }
+
+  .section-heading h2 {
+    font-size: 29px;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
